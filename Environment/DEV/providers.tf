@@ -3,8 +3,8 @@ provider "aws" {
   region  = "us-east-1"
   shared_credentials_file = "%USERPROFILE%\\.aws\\credentials"
   profile = "default" 
-  #access_key = "AKIAQP2G5EN2Z5AMD62B"
-  #secret_key = "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"
+  #access_key = var.accesskey
+  #secret_key = var.secretkey
 }
 terraform {
   backend "s3" {
